@@ -1,8 +1,6 @@
 # grid
 
-**If you DJ:** batch beatgrid work on a whole playlist — analyze once, write grids back to rekordbox and Traktor sidecars so Performance mode and the FLX10 load consistent BPM grids without clicking every track in-app. Separate repo because the grid engine is GPL; ix stays Apache.
-
-DJ tools that stay out of [ix](https://github.com/ixamal/ix). Beatgrids, tempo, and playlist runs.
+Beatgrid a whole playlist once, write markers back to rekordbox and Traktor sidecars — so Performance mode and the FLX10 are not a click-fest. Lives in its own repo because the analyzer is **GPL**; [ix](https://github.com/ixamal/ix) stays **Apache**.
 
 ## Why a separate repo
 
