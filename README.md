@@ -1,5 +1,7 @@
 # grid
 
+**If you DJ:** batch beatgrid work on a whole playlist — analyze once, write grids back to rekordbox and Traktor sidecars so Performance mode and the FLX10 load consistent BPM grids without clicking every track in-app. Separate repo because the grid engine is GPL; ix stays Apache.
+
 DJ tools that stay out of [ix](https://github.com/ixamal/ix). Beatgrids, tempo, and playlist runs.
 
 ## Why a separate repo
@@ -11,3 +13,7 @@ DJ tools that stay out of [ix](https://github.com/ixamal/ix). Beatgrids, tempo, 
 One playlist in from **rekordbox.xml** or **Traktor NML**. Dry-run by default. **`--execute`** decodes each file, grids it, and writes back: xml/nml sidecar markers, and for rekordbox (after you confirm) the **ANLZ** beat grid and collection BPM that Performance mode and the FLX10 load. Keys stay as Mixed In Key / rekordbox left them. Python is the command you run; **`grid-analyse`** is the Rust helper (analyze + optional rekordbox commit).
 
 How and why: [docs/beatgrid.md](docs/beatgrid.md). Example entrypoint: [docs/examples/beatgrid.sh](docs/examples/beatgrid.sh).
+
+## Rekordbox sample bank (2026-10-11)
+
+Not a grid job. Opening Traktor or Maschine while Rekordbox is already up restarts Core Audio, and the sample-bank drop dies even while the deck keeps playing. Quit **Maschine**, then **Traktor**, then **Rekordbox**, and open Rekordbox again. Audio device stays native **DDJ-FLX10**. Full write-up: [ixamal/ix](https://github.com/ixamal/ix) `docs/examples/traktor-master-class-notes.md`.
